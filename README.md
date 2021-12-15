@@ -1,4 +1,4 @@
-# emma-app
+# warko-app
 
 ## Project setup
 ```
