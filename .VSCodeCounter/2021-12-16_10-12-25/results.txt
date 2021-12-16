@@ -1,0 +1,59 @@
+Date : 2021-12-16 10:12:25
+Directory : c:\Users\robinl\Desktop\Kram\Berufsschule\Lernfeld 6 - Entwickeln und Bereitstellen von Anwendungssysteme\warko\warko-app
+Total : 24 files,  36061 codes, 21 comments, 192 blanks, all 36274 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| JSON       |          3 |     34,758 |         11 |          3 |     34,772 |
+| SCSS       |          4 |        601 |          0 |         93 |        694 |
+| Vue        |          5 |        369 |          7 |         48 |        424 |
+| TypeScript |          9 |        283 |          2 |         40 |        325 |
+| HTML       |          1 |         26 |          1 |          1 |         28 |
+| Markdown   |          1 |         19 |          0 |          6 |         25 |
+| JavaScript |          1 |          5 |          0 |          1 |          6 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++----------------------------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                                                               | files      | code       | comment    | blank      | total      |
++----------------------------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                                                                  |         24 |     36,061 |         21 |        192 |     36,274 |
+| public                                                                                                                                             |          1 |         26 |          1 |          1 |         28 |
+| src                                                                                                                                                |         18 |      1,253 |          9 |        181 |      1,443 |
+| src\router                                                                                                                                         |          1 |         51 |          0 |          5 |         56 |
+| src\store                                                                                                                                          |          1 |         44 |          0 |          7 |         51 |
+| src\views                                                                                                                                          |         12 |        989 |          0 |        127 |      1,116 |
++----------------------------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++----------------------------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                                                                                           | language   | code       | comment    | blank      | total      |
++----------------------------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| c:\Users\robinl\Desktop\Kram\Berufsschule\Lernfeld 6 - Entwickeln und Bereitstellen von Anwendungssysteme\warko\warko-app\README.md                | Markdown   |         19 |          0 |          6 |         25 |
+| c:\Users\robinl\Desktop\Kram\Berufsschule\Lernfeld 6 - Entwickeln und Bereitstellen von Anwendungssysteme\warko\warko-app\babel.config.js          | JavaScript |          5 |          0 |          1 |          6 |
+| c:\Users\robinl\Desktop\Kram\Berufsschule\Lernfeld 6 - Entwickeln und Bereitstellen von Anwendungssysteme\warko\warko-app\package-lock.json        | JSON       |     34,668 |          0 |          1 |     34,669 |
+| c:\Users\robinl\Desktop\Kram\Berufsschule\Lernfeld 6 - Entwickeln und Bereitstellen von Anwendungssysteme\warko\warko-app\package.json             | JSON       |         60 |          0 |          1 |         61 |
+| c:\Users\robinl\Desktop\Kram\Berufsschule\Lernfeld 6 - Entwickeln und Bereitstellen von Anwendungssysteme\warko\warko-app\public\index.html        | HTML       |         26 |          1 |          1 |         28 |
+| c:\Users\robinl\Desktop\Kram\Berufsschule\Lernfeld 6 - Entwickeln und Bereitstellen von Anwendungssysteme\warko\warko-app\src\App.vue              | Vue        |        145 |          7 |         36 |        188 |
+| c:\Users\robinl\Desktop\Kram\Berufsschule\Lernfeld 6 - Entwickeln und Bereitstellen von Anwendungssysteme\warko\warko-app\src\main.ts              | TypeScript |         10 |          0 |          3 |         13 |
+| c:\Users\robinl\Desktop\Kram\Berufsschule\Lernfeld 6 - Entwickeln und Bereitstellen von Anwendungssysteme\warko\warko-app\src\router\index.ts      | TypeScript |         51 |          0 |          5 |         56 |
+| c:\Users\robinl\Desktop\Kram\Berufsschule\Lernfeld 6 - Entwickeln und Bereitstellen von Anwendungssysteme\warko\warko-app\src\shims-tsx.d.ts       | TypeScript |         10 |          2 |          2 |         14 |
+| c:\Users\robinl\Desktop\Kram\Berufsschule\Lernfeld 6 - Entwickeln und Bereitstellen von Anwendungssysteme\warko\warko-app\src\shims-vue.d.ts       | TypeScript |          4 |          0 |          1 |          5 |
+| c:\Users\robinl\Desktop\Kram\Berufsschule\Lernfeld 6 - Entwickeln und Bereitstellen von Anwendungssysteme\warko\warko-app\src\store\index.ts       | TypeScript |         44 |          0 |          7 |         51 |
+| c:\Users\robinl\Desktop\Kram\Berufsschule\Lernfeld 6 - Entwickeln und Bereitstellen von Anwendungssysteme\warko\warko-app\src\views\Kasse.scss     | SCSS       |        175 |          0 |         32 |        207 |
+| c:\Users\robinl\Desktop\Kram\Berufsschule\Lernfeld 6 - Entwickeln und Bereitstellen von Anwendungssysteme\warko\warko-app\src\views\Kasse.ts       | TypeScript |         18 |          0 |          2 |         20 |
+| c:\Users\robinl\Desktop\Kram\Berufsschule\Lernfeld 6 - Entwickeln und Bereitstellen von Anwendungssysteme\warko\warko-app\src\views\Kasse.vue      | Vue        |        113 |          0 |          3 |        116 |
+| c:\Users\robinl\Desktop\Kram\Berufsschule\Lernfeld 6 - Entwickeln und Bereitstellen von Anwendungssysteme\warko\warko-app\src\views\Main.scss      | SCSS       |        177 |          0 |         22 |        199 |
+| c:\Users\robinl\Desktop\Kram\Berufsschule\Lernfeld 6 - Entwickeln und Bereitstellen von Anwendungssysteme\warko\warko-app\src\views\Main.ts        | TypeScript |         41 |          0 |          6 |         47 |
+| c:\Users\robinl\Desktop\Kram\Berufsschule\Lernfeld 6 - Entwickeln und Bereitstellen von Anwendungssysteme\warko\warko-app\src\views\Main.vue       | Vue        |         46 |          0 |          3 |         49 |
+| c:\Users\robinl\Desktop\Kram\Berufsschule\Lernfeld 6 - Entwickeln und Bereitstellen von Anwendungssysteme\warko\warko-app\src\views\Store.scss     | SCSS       |         96 |          0 |         13 |        109 |
+| c:\Users\robinl\Desktop\Kram\Berufsschule\Lernfeld 6 - Entwickeln und Bereitstellen von Anwendungssysteme\warko\warko-app\src\views\Store.ts       | TypeScript |         74 |          0 |          7 |         81 |
+| c:\Users\robinl\Desktop\Kram\Berufsschule\Lernfeld 6 - Entwickeln und Bereitstellen von Anwendungssysteme\warko\warko-app\src\views\Store.vue      | Vue        |         33 |          0 |          3 |         36 |
+| c:\Users\robinl\Desktop\Kram\Berufsschule\Lernfeld 6 - Entwickeln und Bereitstellen von Anwendungssysteme\warko\warko-app\src\views\Warenkorb.scss | SCSS       |        153 |          0 |         26 |        179 |
+| c:\Users\robinl\Desktop\Kram\Berufsschule\Lernfeld 6 - Entwickeln und Bereitstellen von Anwendungssysteme\warko\warko-app\src\views\Warenkorb.ts   | TypeScript |         31 |          0 |          7 |         38 |
+| c:\Users\robinl\Desktop\Kram\Berufsschule\Lernfeld 6 - Entwickeln und Bereitstellen von Anwendungssysteme\warko\warko-app\src\views\Warenkorb.vue  | Vue        |         32 |          0 |          3 |         35 |
+| c:\Users\robinl\Desktop\Kram\Berufsschule\Lernfeld 6 - Entwickeln und Bereitstellen von Anwendungssysteme\warko\warko-app\tsconfig.json            | JSON       |         30 |         11 |          1 |         42 |
+| Total                                                                                                                                              |            |     36,061 |         21 |        192 |     36,274 |
++----------------------------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+

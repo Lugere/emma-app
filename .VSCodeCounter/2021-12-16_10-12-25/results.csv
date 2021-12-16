@@ -1,0 +1,26 @@
+"filename", "language", "JSON", "Vue", "TypeScript", "SCSS", "Markdown", "HTML", "JavaScript", "comment", "blank", "total"
+"c:\Users\robinl\Desktop\Kram\Berufsschule\Lernfeld 6 - Entwickeln und Bereitstellen von Anwendungssysteme\warko\warko-app\README.md", "Markdown", 0, 0, 0, 0, 19, 0, 0, 0, 6, 25
+"c:\Users\robinl\Desktop\Kram\Berufsschule\Lernfeld 6 - Entwickeln und Bereitstellen von Anwendungssysteme\warko\warko-app\babel.config.js", "JavaScript", 0, 0, 0, 0, 0, 0, 5, 0, 1, 6
+"c:\Users\robinl\Desktop\Kram\Berufsschule\Lernfeld 6 - Entwickeln und Bereitstellen von Anwendungssysteme\warko\warko-app\package-lock.json", "JSON", 34668, 0, 0, 0, 0, 0, 0, 0, 1, 34669
+"c:\Users\robinl\Desktop\Kram\Berufsschule\Lernfeld 6 - Entwickeln und Bereitstellen von Anwendungssysteme\warko\warko-app\package.json", "JSON", 60, 0, 0, 0, 0, 0, 0, 0, 1, 61
+"c:\Users\robinl\Desktop\Kram\Berufsschule\Lernfeld 6 - Entwickeln und Bereitstellen von Anwendungssysteme\warko\warko-app\public\index.html", "HTML", 0, 0, 0, 0, 0, 26, 0, 1, 1, 28
+"c:\Users\robinl\Desktop\Kram\Berufsschule\Lernfeld 6 - Entwickeln und Bereitstellen von Anwendungssysteme\warko\warko-app\src\App.vue", "Vue", 0, 145, 0, 0, 0, 0, 0, 7, 36, 188
+"c:\Users\robinl\Desktop\Kram\Berufsschule\Lernfeld 6 - Entwickeln und Bereitstellen von Anwendungssysteme\warko\warko-app\src\main.ts", "TypeScript", 0, 0, 10, 0, 0, 0, 0, 0, 3, 13
+"c:\Users\robinl\Desktop\Kram\Berufsschule\Lernfeld 6 - Entwickeln und Bereitstellen von Anwendungssysteme\warko\warko-app\src\router\index.ts", "TypeScript", 0, 0, 51, 0, 0, 0, 0, 0, 5, 56
+"c:\Users\robinl\Desktop\Kram\Berufsschule\Lernfeld 6 - Entwickeln und Bereitstellen von Anwendungssysteme\warko\warko-app\src\shims-tsx.d.ts", "TypeScript", 0, 0, 10, 0, 0, 0, 0, 2, 2, 14
+"c:\Users\robinl\Desktop\Kram\Berufsschule\Lernfeld 6 - Entwickeln und Bereitstellen von Anwendungssysteme\warko\warko-app\src\shims-vue.d.ts", "TypeScript", 0, 0, 4, 0, 0, 0, 0, 0, 1, 5
+"c:\Users\robinl\Desktop\Kram\Berufsschule\Lernfeld 6 - Entwickeln und Bereitstellen von Anwendungssysteme\warko\warko-app\src\store\index.ts", "TypeScript", 0, 0, 44, 0, 0, 0, 0, 0, 7, 51
+"c:\Users\robinl\Desktop\Kram\Berufsschule\Lernfeld 6 - Entwickeln und Bereitstellen von Anwendungssysteme\warko\warko-app\src\views\Kasse.scss", "SCSS", 0, 0, 0, 175, 0, 0, 0, 0, 32, 207
+"c:\Users\robinl\Desktop\Kram\Berufsschule\Lernfeld 6 - Entwickeln und Bereitstellen von Anwendungssysteme\warko\warko-app\src\views\Kasse.ts", "TypeScript", 0, 0, 18, 0, 0, 0, 0, 0, 2, 20
+"c:\Users\robinl\Desktop\Kram\Berufsschule\Lernfeld 6 - Entwickeln und Bereitstellen von Anwendungssysteme\warko\warko-app\src\views\Kasse.vue", "Vue", 0, 113, 0, 0, 0, 0, 0, 0, 3, 116
+"c:\Users\robinl\Desktop\Kram\Berufsschule\Lernfeld 6 - Entwickeln und Bereitstellen von Anwendungssysteme\warko\warko-app\src\views\Main.scss", "SCSS", 0, 0, 0, 177, 0, 0, 0, 0, 22, 199
+"c:\Users\robinl\Desktop\Kram\Berufsschule\Lernfeld 6 - Entwickeln und Bereitstellen von Anwendungssysteme\warko\warko-app\src\views\Main.ts", "TypeScript", 0, 0, 41, 0, 0, 0, 0, 0, 6, 47
+"c:\Users\robinl\Desktop\Kram\Berufsschule\Lernfeld 6 - Entwickeln und Bereitstellen von Anwendungssysteme\warko\warko-app\src\views\Main.vue", "Vue", 0, 46, 0, 0, 0, 0, 0, 0, 3, 49
+"c:\Users\robinl\Desktop\Kram\Berufsschule\Lernfeld 6 - Entwickeln und Bereitstellen von Anwendungssysteme\warko\warko-app\src\views\Store.scss", "SCSS", 0, 0, 0, 96, 0, 0, 0, 0, 13, 109
+"c:\Users\robinl\Desktop\Kram\Berufsschule\Lernfeld 6 - Entwickeln und Bereitstellen von Anwendungssysteme\warko\warko-app\src\views\Store.ts", "TypeScript", 0, 0, 74, 0, 0, 0, 0, 0, 7, 81
+"c:\Users\robinl\Desktop\Kram\Berufsschule\Lernfeld 6 - Entwickeln und Bereitstellen von Anwendungssysteme\warko\warko-app\src\views\Store.vue", "Vue", 0, 33, 0, 0, 0, 0, 0, 0, 3, 36
+"c:\Users\robinl\Desktop\Kram\Berufsschule\Lernfeld 6 - Entwickeln und Bereitstellen von Anwendungssysteme\warko\warko-app\src\views\Warenkorb.scss", "SCSS", 0, 0, 0, 153, 0, 0, 0, 0, 26, 179
+"c:\Users\robinl\Desktop\Kram\Berufsschule\Lernfeld 6 - Entwickeln und Bereitstellen von Anwendungssysteme\warko\warko-app\src\views\Warenkorb.ts", "TypeScript", 0, 0, 31, 0, 0, 0, 0, 0, 7, 38
+"c:\Users\robinl\Desktop\Kram\Berufsschule\Lernfeld 6 - Entwickeln und Bereitstellen von Anwendungssysteme\warko\warko-app\src\views\Warenkorb.vue", "Vue", 0, 32, 0, 0, 0, 0, 0, 0, 3, 35
+"c:\Users\robinl\Desktop\Kram\Berufsschule\Lernfeld 6 - Entwickeln und Bereitstellen von Anwendungssysteme\warko\warko-app\tsconfig.json", "JSON", 30, 0, 0, 0, 0, 0, 0, 11, 1, 42
+"Total", "-", 34758, 369, 283, 601, 19, 26, 5, 21, 192, 36274

@@ -10,6 +10,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins";
+    outline: none;
 }
 
 #app {
@@ -181,6 +182,6 @@ input {
 
 ::selection {
     color: white;
-    background: #0f223f;
+    background: #e42a2a;
 }
 </style>

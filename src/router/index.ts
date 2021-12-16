@@ -4,6 +4,7 @@ import Main from "../views/Main.vue";
 import Store from "../views/Store.vue";
 import Warenkorb from "../views/Warenkorb.vue";
 import Kasse from "../views/Kasse.vue";
+import store from "@/store";
 
 Vue.use(VueRouter);
 
@@ -51,5 +52,14 @@ const router = new VueRouter({
     base: process.env.BASE_URL,
     routes,
 });
+
+// router.beforeEach((to, from, next) => {
+//     if (to.fullPath == "/Kasse" && store.state.cart.length > 0) next("Kasse");
+//     else if (from)
+//         if (to.fullPath == from.fullPath) next(from.fullPath);
+//     else next("Store");
+
+//     next();
+// })
 
 export default router;

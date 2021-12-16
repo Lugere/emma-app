@@ -23,7 +23,7 @@
             </div>
         </div>
         <div class="cart-is-empty" v-else>
-            <i class="fas fa-inbox" />
+            <i class="fas fa-shopping-basket" />
             <span> Dein Warenkorb<br />ist leer </span>
         </div>
     </div>
