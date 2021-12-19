@@ -21,6 +21,12 @@
     background-size: cover;
 }
 
+input {
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 10px;
+}
+
 button {
     border: none;
     cursor: pointer;
@@ -28,6 +34,10 @@ button {
     text-transform: capitalize;
     transition: background-color 300ms ease;
     user-select: none;
+
+    &[disabled] {
+        cursor: default;
+    }
 
     .text {
         transition: transform 300ms ease;
@@ -44,12 +54,6 @@ button {
             transform: scale(0.95);
         }
     }
-}
-
-input {
-    border: none;
-    padding: .5em 1em;
-    border-radius: 10px;
 }
 
 .button {
@@ -70,18 +74,6 @@ input {
         transition: transform 300ms ease;
     }
 
-    &:hover {
-        .text {
-            transform: translateY(-5px);
-        }
-    }
-
-    &:active {
-        .text {
-            transform: scale(0.95);
-        }
-    }
-
     + button {
         margin-left: 10px;
     }
@@ -89,60 +81,86 @@ input {
     &.primary {
         background-color: #0f223f;
 
-        &:hover {
+        &:hover:not([disabled]) {
             background-color: #183c72;
         }
 
-        &:active {
+        &:active:not([disabled]) {
             background-color: #06101f;
+        }
+
+        &[disabled] {
+            background-color: #0084ff;
+            color: #0f223f !important;
         }
     }
 
     &.accent {
         background-color: #0084ff;
 
-        &:hover {
+        &:hover:not([disabled]) {
             background-color: #1a90ff;
         }
 
-        &:active {
+        &:active:not([disabled]) {
             background-color: #006ed5;
+        }
+
+        &[disabled] {
+            background-color: #689ed0;
+            color: #0f223f !important;
         }
     }
 
     &.success {
         background-color: #07c774;
+        color: #0f223f;
 
-        &:hover {
+        &:hover:not([disabled]) {
             background-color: #00df7e;
         }
 
-        &:active {
+        &:active:not([disabled]) {
             background-color: #06c070;
+        }
+
+        &[disabled] {
+            background-color: #8ce8be;
+            color: #0f223f !important;
         }
     }
 
     &.warning {
         background-color: #e4932a;
 
-        &:hover {
+        &:hover:not([disabled]) {
             background-color: #ff9914;
         }
 
-        &:active {
+        &:active:not([disabled]) {
             background-color: #da800b;
+        }
+
+        &[disabled] {
+            background-color: #ffd092;
+            color: #0f223f !important;
         }
     }
 
     &.danger {
         background-color: #e42a2a;
 
-        &:hover {
+        &:hover:not([disabled]) {
             background-color: #ff1414;
         }
 
-        &:active {
+        &:active:not([disabled]) {
             background-color: #da0b0b;
+        }
+
+        &[disabled] {
+            background-color: #ffa0a0;
+            color: #0f223f !important;
         }
     }
 }

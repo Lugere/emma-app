@@ -45,42 +45,42 @@
                     height: 30px;
                     place-items: center;
                     width: 30px;
-            
+
                     .fas {
                         transition: transform 300ms ease;
                     }
-            
+
                     &:hover {
                         .fas {
                             transform: translateY(-5px);
                         }
                     }
-            
+
                     &:active {
                         .fas {
                             transform: scale(0.95);
                         }
                     }
-            
+
                     &.decrement {
                         background-color: #e42a2a;
-            
+
                         &:hover {
                             background-color: #ff1414;
                         }
-            
+
                         &:active {
                             background-color: #da0b0b;
                         }
                     }
-            
+
                     &.increment {
                         background-color: #07c774;
-            
+
                         &:hover {
                             background-color: #00df7e;
                         }
-            
+
                         &:active {
                             background-color: #06c070;
                         }
@@ -115,10 +115,36 @@
                 padding: 0 1em;
                 position: absolute;
                 right: 0;
-                width: 110px;
+                width: 150px;
             }
 
-            
+            .delete-item {
+                background-color: #e42a2a;
+                border-radius: 5px;
+                cursor: pointer;
+                display: grid;
+                height: 30px;
+                place-items: center;
+                position: absolute;
+                right: 8em;
+                width: 30px;
+
+                .fas {
+                    transition: transform 300ms ease;
+                }
+
+                &:hover {
+                    .fas {
+                        transform: translateY(-5px);
+                    }
+                }
+
+                &:active {
+                    .fas {
+                        transform: scale(0.95);
+                    }
+                }
+            }
         }
 
         .total {
@@ -145,7 +171,7 @@
                 justify-content: right;
                 margin-left: auto;
                 padding: 0 1em;
-                width: 110px;
+                width: 150px;
             }
         }
     }

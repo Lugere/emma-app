@@ -15,12 +15,13 @@
         min-width: 430px;
         overflow: hidden;
         position: relative;
-        width: 70%;
+        width: 1300px;
 
         .header {
             display: flex;
             height: 100px;
             padding: 0 2em;
+            position: relative;
 
             .logo {
                 color: #0f223f;
@@ -29,6 +30,48 @@
                 font-weight: 700;
                 height: 100px;
                 line-height: 100px;
+            }
+
+            .search {
+                align-items: center;
+                display: flex;
+                height: 40px;
+                right: 2em;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+
+                i {
+                    padding: 0 1em;
+                    position: absolute;
+                    // transition: background-color 300ms;
+                }
+
+                .search-input {
+                    background-color: #94a8bb;
+                    height: 100%;
+                    padding-left: 3.5em;
+                    transition: background-color 300ms;
+                    width: 300px;
+
+                    &:focus {
+                        background-color: #0f223f;
+                        color: #94a8bb;
+
+                        ~ i {
+                            color: #94a8bb;
+                        }
+                    }
+                }
+
+                .search-button {
+                    border-radius: 0 10px 10px 0;
+                    display: grid;
+                    height: 100%;
+                    padding: 0 !important;
+                    place-items: center;
+                    width: 0px !important;
+                }
             }
         }
 
@@ -94,12 +137,14 @@
                         right: 37px;
                         top: 37px;
                         transform: scale(0);
-                        transition: transform 500ms;
+                        transition: transform 300ms, opacity 300ms;
                         user-select: none;
                         width: 20px;
+                        opacity: 0;
 
                         &.show {
                             transform: scale(1);
+                            opacity: 1;
                         }
                     }
 
@@ -182,7 +227,7 @@
             padding: 3em;
             width: 100%;
             overflow-x: hidden;
-            overflow-y: scroll;
+            overflow-y: auto;
         }
 
         .actions {

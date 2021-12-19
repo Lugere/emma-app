@@ -53,13 +53,12 @@ const router = new VueRouter({
     routes,
 });
 
-// router.beforeEach((to, from, next) => {
-//     if (to.fullPath == "/Kasse" && store.state.cart.length > 0) next("Kasse");
-//     else if (from)
-//         if (to.fullPath == from.fullPath) next(from.fullPath);
-//     else next("Store");
+router.beforeEach((to, from, next) => {
+    document.title = `warko - ${to.name}`;
 
-//     next();
-// })
+    const isCartEmpty = store.state.cart.length <= 0;
+    if (isCartEmpty && to.path == "/Kasse") next("Warenkorb");
+    else next();
+})
 
 export default router;

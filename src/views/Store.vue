@@ -1,12 +1,12 @@
 <template>
     <div id="Store">
         <div class="product-list">
-            <div class="product" v-for="(product, key) in products" :key="key">
+            <div class="product" v-for="product in products" :key="product.prodId">
                 <div class="price">{{ product.price }}€</div>
                 <div
-                    @click="removeFromCart(key)"
+                    @click="removeFromCart(product)"
                     class="remove-from-cart"
-                    :class="{ show: product.isInCart }"
+                    :class="{ show: isInCart(product) }"
                 >
                     <i class="fas fa-times"></i>
                 </div>
@@ -17,9 +17,8 @@
                 <div class="action">
                     <button
                         class="to-cart-btn"
-                        @click="addToCart(product.prodId)"
-                        :class="{ 'is-in-cart': isInCart(product.prodId) }"
-                        :disabled="isInCart(product.prodId)"
+                        @click="addToCart(product)"
+                        :disabled="isInCart(product)"
                     >
                         <div class="text" v-if="!isInCart(product.prodId)">In den Warenkorb</div>
                         <div class="text" v-else>Im Warenkorb</div>

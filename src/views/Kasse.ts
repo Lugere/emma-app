@@ -1,21 +1,38 @@
+import store from "@/store";
 import { Vue, Component } from "vue-property-decorator";
 import { mapState } from "vuex";
+import moment from "moment";
+moment.locale("de");
+moment().day("Monday");
 
 @Component({
     computed: {
-        ...mapState(["cart"]),
+        ...mapState(["cart", "address", "shippingOption", "paymentMethod"]),
     },
 })
 export default class Kasse extends Vue {
     public cart!: any;
-    paymentMethod = "";
-    shippingOption: any;
+    public address!: any;
+    public shippingOption!: any;
+    public paymentMethod!: any;
+
+    addressRules = {
+        name: [{ required: true, message: "Bitte einen Namen angeben", trigger: "blur" }],
+        email: [
+            { required: true, message: "Bitte eine E-Mail angeben", trigger: "blur" },
+            { type: "email", message: "Die E-Mail ist ungültig", trigger: "blur" },
+        ],
+        street: [{ required: true, message: "Bitte eine Straße angeben", trigger: "blur" }],
+        number: [{ required: true, message: "Bitte eine Hausnr. angeben", trigger: "blur" }],
+        plz: [{ required: true, message: "Bitte eine PLZ angeben", trigger: "blur" }],
+        city: [{ required: true, message: "Bitte einen Ort angeben", trigger: "blur" }],
+    };
 
     shippingOptions = [
         {
             type: "standard",
             price: 0,
-            label: "Standart",
+            label: "Standard",
             icon: "truck",
         },
         {
@@ -26,16 +43,42 @@ export default class Kasse extends Vue {
         },
     ];
 
+    public switchShippingOption(option: any) {
+        store.dispatch("switchShippingOption", option);
+    }
+    public changePaymentMethod(method: any) {
+        store.dispatch("changePaymentMethod", method);
+    }
+
+    public updateAddress(value, field) {
+        store.commit("updateAddress", { value, field });
+    }
+
     public get totalSum() {
         let sum = 0;
         this.cart.forEach(item => {
             sum += item.price * item.quantity;
         });
-        return sum.toFixed(2);
+        return (sum + this.shippingOption.price).toFixed(2);
     }
 
-    beforeMount() {
-        this.shippingOption = this.shippingOptions[0];
-        console.log(this.shippingOption);
+    public validate(formName) {
+        this.$refs[formName].validate((valid: any) => {
+            if (valid) console.log("valid");
+            else {
+                console.log("invalid");
+                return false;
+            }
+        });
+    }
+
+    public get deliveryDate() {
+        let days = 5;
+        if (this.shippingOption.type == "express") days = 2;
+
+        // if delivery-date falls on sunday
+        if (moment().add(days, "days").format("d") == "0") days++;
+
+        return moment().add(days, "days").format("dddd, DD. MMMM");
     }
 }

@@ -23,15 +23,11 @@ export default class Warenkorb extends Vue {
         return sum.toFixed(2);
     }
 
-    public decrementQuantity(product) {
-        store.dispatch("decrementQuantity", product);
+    public updateQuantity(product, operator) {
+        store.dispatch("updateQuantity", { product, operator });
     }
 
-    public incrementQuantity(product) {
-        store.dispatch("incrementQuantity", product);
-    }
-
-    public getRandom(): number {
-        return Math.floor(Math.random() * 12) + 1;
+    public removeFromCart(product) {
+        store.dispatch("removeFromCart", product);
     }
 }

@@ -6,42 +6,43 @@
 
     .split {
         display: flex;
+        position: relative;
 
         .cart-list {
             min-height: 100%;
+            max-height: 100%;
             min-width: 50%;
             padding-right: 1em;
             position: relative;
 
-            .title {
-            }
-
             .item {
-                width: 100%;
-                display: flex;
-                background-color: #0f223f;
-                color: whitesmoke;
-                height: 40px;
+                -webkit-box-shadow: 0px 0px 15px 5px #0f223f40;
                 align-items: center;
-                padding: 1em;
+                background-color: #0f223f;
                 border-radius: 10px;
+                box-shadow: 0px 0px 15px 5px #0f223f40;
+                color: whitesmoke;
+                display: flex;
+                height: 40px;
+                padding: 1em;
                 position: relative;
+                width: 100%;
 
                 + .item {
                     margin-top: 5px;
                 }
 
                 .quantity {
-                    width: 60px;
-                    height: 100%;
                     background-color: #0084ff;
-                    position: absolute;
                     border-radius: 8px 0 0 8px;
-                    display: grid;
-                    place-items: center;
                     color: #0f223f;
+                    display: grid;
                     font-weight: 700;
+                    height: 100%;
                     left: 0;
+                    place-items: center;
+                    position: absolute;
+                    width: 60px;
                 }
 
                 .description {
@@ -72,28 +73,28 @@
                     position: relative;
 
                     i {
-                        width: 60px;
                         background-color: #e42a2a;
                         border-radius: 8px 0 0 8px;
+                        display: grid;
+                        height: 100%;
+                        left: 0;
+                        place-items: center;
                         position: absolute;
                         top: 0;
-                        left: 0;
-                        height: 100%;
-                        display: grid;
-                        place-items: center;
+                        width: 60px;
                     }
 
                     .shipping-price {
+                        align-items: center;
+                        background-color: #e42a2a;
+                        border-radius: 0 10px 10px 0;
+                        display: flex;
+                        height: 100%;
+                        justify-content: right;
+                        padding: 0 1em;
                         position: absolute;
                         right: 0;
                         top: 0;
-                        height: 100%;
-                        display: flex;
-                        justify-content: right;
-                        align-items: center;
-                        padding: 0 1em;
-                        background-color: #e42a2a;
-                        border-radius: 0 10px 10px 0;
                         width: 110px;
                     }
 
@@ -131,10 +132,10 @@
                 justify-content: center;
                 left: 50%;
                 position: absolute;
+                text-align: center;
                 top: 50%;
                 transform: translate(-50%, -50%);
                 width: 300px;
-                text-align: center;
 
                 .fas {
                     font-size: 40pt;
@@ -150,71 +151,130 @@
             height: 100%;
             min-width: 50%;
 
-            .address-form {
+            .form-item {
                 display: flex;
-                justify-content: stretch;
-                flex-direction: column;
                 width: 100%;
+                height: 40px;
 
-                .form-item {
-                    display: flex;
-                    height: 40px;
-                    margin-bottom: 10px;
+                + .form-item {
+                    margin-top: 10px;
+                }
+
+                label {
+                    min-width: 85px;
+                    background-color: #0f223f;
+                    color: whitesmoke;
+                    display: grid;
+                    place-items: center;
+                    padding: 0 1em;
+                    border-radius: 10px 0 0 10px;
+                }
+
+                input {
+                    border-radius: 0 10px 10px 0;
                     width: 100%;
+                }
 
-                    label {
-                        background-color: #0f223f;
-                        border-radius: 5px 0 0 5px;
-                        color: whitesmoke;
-                        font-size: 11pt;
-                        height: 40px;
-                        padding: 0.5em 1em;
-                        text-align: center;
-                        min-width: 100px;
+                &.street-nr {
+                    .street-input {
+                        width: 80%;
                     }
 
                     .house-nr {
                         margin-left: 10px;
-                    }
+                        width: 30%;
 
-                    .postal-code {
-                        margin-right: 10px;
-                    }
-
-                    input {
-                        height: 40px;
-                        border-radius: 0 5px 5px 0;
-                        width: 100%;
-
-                        &.house-nr-input {
+                        input {
                             width: 80px;
                         }
+                    }
+                }
 
-                        &.postal-code {
-                            width: 120px;
-                        }
+                &.city-postal {
+                    .postal-code {
+                        width: 150px;
+                    }
+
+                    .city {
+                        margin-left: 10px;
+                    }
+                }
+
+                &.phone {
+                    display: flex;
+
+                    input {
+                        width: 250px;
+                    }
+                }
+            }
+
+            .address-form {
+                display: flex;
+                flex-direction: column;
+                justify-content: stretch;
+                width: 100%;
+
+                .optional {
+                    padding-top: 5px;
+                    display: flex;
+                    line-height: 100%;
+                    font-style: italic;
+                    margin: 10px 0 5px 0;
+                }
+            }
+
+            .payment-method + .shipping-options {
+                margin-left: 10px;
+            }
+
+            .payment-method {
+                display: flex;
+                flex-direction: column;
+                margin-top: 1em;
+                width: 50%;
+
+                .payment-method-item {
+                    -webkit-box-shadow: 0px 0px 15px 5px #0f223f40;
+                    align-items: center;
+                    border-radius: 5px;
+                    box-shadow: 0px 0px 15px 5px #0f223f40;
+                    color: whitesmoke;
+                    display: flex;
+                    height: 50px;
+                    justify-content: center;
+                    width: 300px;
+
+                    + .payment-method-item {
+                        margin: 10px 0 0 0;
+                    }
+
+                    i {
+                        margin-right: 1em;
                     }
                 }
             }
 
             .shipping-options {
                 margin-top: 1em;
+                width: 50%;
 
                 .options {
                     display: flex;
-                    .option {
-                        width: 50%;
-                        background-color: #0f223f;
-                        display: flex;
-                        align-items: center;
-                        position: relative;
+                    flex-direction: column;
+                    width: 100%;
 
-                        &.active {
-                            background-color: #0084ff;
-                        }
+                    .option {
+                        -webkit-box-shadow: 0px 0px 15px 5px #0f223f40;
+                        align-items: center;
+                        box-shadow: 0px 0px 15px 5px #0f223f40;
+                        display: flex;
+                        position: relative;
+                        height: 80px;
+                        width: 100%;
 
                         + .option {
-                            margin-left: 10px;
+                            margin: 10px 0 0 0;
                         }
 
                         i {
@@ -222,48 +282,37 @@
                         }
 
                         .price {
+                            align-items: center;
+                            border-radius: 0 8px 8px 0;
+                            display: flex;
+                            height: 100%;
+                            justify-content: right;
+                            padding-right: 1em;
                             position: absolute;
                             right: 0;
                             top: 0;
-                            height: 100%;
                             width: 90px;
-                            display: flex;
-                            align-items: center;
-                            justify-content: right;
-                            padding-right: 1em;
-                            // background-color: #e42a2a;
-                            border-radius: 0 8px 8px 0;
                         }
                     }
                 }
             }
 
-            .payment-method {
+            .arrival-date {
+                margin-top: 1em;
+                font-size: 16pt;
+                color: #0f223f;
+                background-color: #07c774;
+                height: 60px;
                 display: flex;
+                justify-content: center;
+                padding: 0 1em;
+                border-radius: 10px;
                 flex-direction: column;
-                margin-top: 2em;
-
-                .payment-method-item {
-                    align-items: center;
-                    border-radius: 5px;
-                    color: whitesmoke;
-                    display: flex;
-                    height: 50px;
-                    justify-content: center;
-                    width: 300px;
-
-                    &.active {
-                        background-color: #0084ff;
-                        color: #0f223f;
-                    }
-
-                    + .payment-method-item {
-                        margin: 5px 0 0 0;
-                    }
-
-                    i {
-                        margin-right: 1em;
-                    }
+                line-height: 16pt;
+                
+                .subtitle {
+                    font-size: 11pt;
+                    line-height: 12pt;
                 }
             }
         }

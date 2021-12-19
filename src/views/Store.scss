@@ -91,13 +91,13 @@
 
                 .to-cart-btn {
                     background-color: #07c774;
+                    border-radius: 0 0 10px 10px;
                     color: whitesmoke;
                     height: 50px;
                     transition: background-color 200ms;
                     width: 100%;
-                    border-radius: 0 0 10px 10px;
 
-                    &.is-in-cart {
+                    &[disabled] {
                         background-color: #8ce8be !important;
                         color: #0f223f !important;
                     }
