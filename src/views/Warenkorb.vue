@@ -21,7 +21,7 @@
                         <i class="fas fa-plus" />
                     </button>
                 </div>
-                <div class="description">{{ item.desc }}</div>
+                <div class="description">{{ item.description }}</div>
                 <div class="price">{{ (item.price * item.quantity).toFixed(2) }}€</div>
             </div>
             <div class="total">
@@ -31,7 +31,7 @@
         </div>
         <div class="cart-is-empty" v-else>
             <i class="fas fa-shopping-basket" />
-            <span> Dein Warenkorb<br />ist leer </span>
+            <span> Dein Warenkorb ist leer </span>
         </div>
     </div>
 </template>

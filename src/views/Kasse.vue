@@ -5,7 +5,7 @@
                 <div class="title">Besellung überprüfen</div>
                 <div class="item" v-for="(item, key) in cart" :key="key">
                     <div class="quantity">{{ item.quantity }}</div>
-                    <div class="description">{{ item.desc }}</div>
+                    <div class="description">{{ item.description }}</div>
                     <div class="price">{{ (item.price * item.quantity).toFixed(2) }}€</div>
                 </div>
                 <div class="cart-is-empty" v-if="cart.length <= 0">
@@ -26,13 +26,7 @@
             </div>
             <div class="additional-info">
                 <div class="title">Versandadresse</div>
-                <el-form
-                    class="address-form"
-                    ref="address-form"
-                    :model="address"
-                    :rules="addressRules"
-                    @submit.prevent=""
-                >
+                <form class="address-form" @submit.prevent="">
                     <section class="form-item">
                         <label for="name">Name</label>
                         <input
@@ -107,7 +101,7 @@
                             @change="updateAddress($event.currentTarget.value, 'phone')"
                         />
                     </section>
-                </el-form>
+                </form>
                 <button
                     class="button success"
                     style="margin-left: 10px; display: grid; place-items: center"
@@ -182,3 +176,11 @@
 <script src="./Kasse.ts" lang="ts"></script>
 
 <style src="./Kasse.scss" lang="scss"></style>
+
+"<br />
+<b>Fatal error</b>:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in C:\xampp\htdocs\warko-api\createEntry.php:18
+Stack trace:
+#0 C:\xampp\htdocs\warko-api\createEntry.php(18): PDOStatement-&gt;execute(Array)
+#1 {main}
+  thrown in <b>C:\xampp\htdocs\warko-api\createEntry.php</b> on line <b>18</b><br />
+"

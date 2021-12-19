@@ -1,6 +1,6 @@
 <template>
     <div id="Store">
-        <div class="product-list">
+        <div class="product-list" v-if="products.length > 0">
             <div class="product" v-for="product in products" :key="product.prodId">
                 <div class="price">{{ product.price }}€</div>
                 <div
@@ -13,7 +13,7 @@
                 <div class="image">
                     <img :src="getImageUrl(product.imgName)" alt="" />
                 </div>
-                <div class="description">{{ product.desc }}</div>
+                <div class="description">{{ product.description }}</div>
                 <div class="action">
                     <button
                         class="to-cart-btn"
@@ -25,6 +25,10 @@
                     </button>
                 </div>
             </div>
+        </div>
+        <div class="product-list-is-empty" v-else>
+            <i class="fas fa-store" />
+            <span> Es gibt noch keine Produkte</span>
         </div>
     </div>
 </template>

@@ -68,6 +68,9 @@ export default class Main extends Vue {
     }
 
     mounted() {
-        store.commit("setCart", JSON.parse(localStorage.cart));
+        store.dispatch("getProducts");
+        if (localStorage.cart && localStorage.cart.length > 0) {
+            store.commit("setCart", JSON.parse(localStorage.cart));
+        }
     }
 }

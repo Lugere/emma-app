@@ -16,18 +16,6 @@ export default class Kasse extends Vue {
     public shippingOption!: any;
     public paymentMethod!: any;
 
-    addressRules = {
-        name: [{ required: true, message: "Bitte einen Namen angeben", trigger: "blur" }],
-        email: [
-            { required: true, message: "Bitte eine E-Mail angeben", trigger: "blur" },
-            { type: "email", message: "Die E-Mail ist ungültig", trigger: "blur" },
-        ],
-        street: [{ required: true, message: "Bitte eine Straße angeben", trigger: "blur" }],
-        number: [{ required: true, message: "Bitte eine Hausnr. angeben", trigger: "blur" }],
-        plz: [{ required: true, message: "Bitte eine PLZ angeben", trigger: "blur" }],
-        city: [{ required: true, message: "Bitte einen Ort angeben", trigger: "blur" }],
-    };
-
     shippingOptions = [
         {
             type: "standard",

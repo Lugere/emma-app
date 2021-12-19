@@ -1,4 +1,5 @@
 import router from "@/router";
+import moment from "moment";
 import Vue from "vue";
 import Vuex, { Store } from "vuex";
 
@@ -22,10 +23,14 @@ const store = new Vuex.Store({
             icon: "truck",
         },
         paymentMethod: "paypal",
+        products: [],
     },
     mutations: {
         setCart(state, value) {
             state.cart = value;
+        },
+        setProducts(state, value) {
+            state.products = value;
         },
         updateShippingOption(state, value) {
             state.shippingOption = value;
@@ -74,6 +79,8 @@ const store = new Vuex.Store({
 
                 commit("setCart", JSON.parse(localStorage.cart));
             }
+
+            console.log(product);
         },
         switchShippingOption({ commit }, option) {
             commit("updateShippingOption", option);
@@ -85,19 +92,17 @@ const store = new Vuex.Store({
          * Actions to Server
          */
         async sendOrder({ commit }) {
+            const data = store.state.address;
+            data["cart"] = JSON.stringify(localStorage.cart);
+            data["createdAt"] = moment.valueOf();
+
+            console.log(data);
+
             await Vue.axios
-                .post(
-                    "http://localhost/warko-ap/sendOrder.php",
-                    {
-                        address: this.state.address,
-                        cart: localStorage.cart,
-                    },
-                    {
-                        headers: {
-                            "Access-Control-Allow-Origin": "*",
-                        },
-                    },
-                )
+                .post("http://localhost/warko-api/createEntry.php/", {
+                    tableName: "orders",
+                    entry: data,
+                })
                 .then(response => {
                     console.log(response);
                 })
@@ -108,6 +113,17 @@ const store = new Vuex.Store({
             // await router.push("Store");
             // commit("setCart", []);
             // localStorage.cart = [];
+        },
+
+        async getProducts({ commit }) {
+            await Vue.axios
+                .get("http://localhost/warko-api/fetchEntries.php?tableName=products")
+                .then(response => {
+                    commit("setProducts", response.data);
+                })
+                .catch(e => {
+                    console.error(`Error fetching products: ${e.message}`);
+                });
         },
     },
     modules: {},

@@ -105,4 +105,31 @@
             }
         }
     }
+
+    .product-list-is-empty {
+        align-items: center;
+        background-color: #0f223f;
+        border-radius: 50%;
+        color: whitesmoke;
+        display: flex;
+        display: flex;
+        flex-direction: column;
+        height: 300px;
+        justify-content: center;
+        left: 50%;
+        padding: 2em;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 300px;
+
+        .fas {
+            font-size: 40pt;
+        }
+
+        span {
+            font-size: 16pt;
+        }
+    }
 }

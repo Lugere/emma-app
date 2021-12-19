@@ -187,11 +187,12 @@
         height: 300px;
         justify-content: center;
         left: 50%;
+        padding: 2em;
         position: absolute;
+        text-align: center;
         top: 50%;
         transform: translate(-50%, -50%);
         width: 300px;
-        text-align: center;
 
         .fas {
             font-size: 40pt;
